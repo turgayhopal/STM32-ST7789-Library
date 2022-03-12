@@ -4,7 +4,9 @@ Review TestCode.txt
 
 - The LCD I use as a reference
 
-![alt text](https://www.direnc.net/13-inc-ips-tft-lcd-240240-renkli-hd-lcd-ekran-st7789-surucu-modulu?gclid=CjwKCAiAprGRBhBgEiwANJEY7BQoTDL3-CetQHFdkE-Z1pM1AKOlFxr8fe1bR8d4m0UA33YTDYfguRoCvyUQAvD_BwE)
+![alt text](https://github.com/[turgayhopal]/[STM32-ST7789-Library
+]/blob/[main]/13-inc-ips-tft-lcd-240240-renkli-hd-lcd-ekran-st7789-surucu-modulu-tft-lcd-display-sincerepromise-42178-15-B.jpg?raw=true)
+
 
 #### Pins must be set as output beforehand.
 
