@@ -1,0 +1,48 @@
+	
+	
+	LCD_setCE(GPIOX, GPIO_PIN_X);
+	LCD_setDC(GPIOX, GPIO_PIN_X);
+	LCD_setRST(GPIOX, GPIO_PIN_X);
+	LCD_setSPI(&hspix);
+
+	LCD_Init(240, 240, NORMAL_MODE);
+	HAL_Delay(500);
+
+	LCD_fillColor(ST7789_WHITE);
+
+	LCD_writeString(10, 20, "Speed Test", Font_16x26, ST7789_BLACK, ST7789_WHITE);
+
+	LCD_fillColor(ST7789_RED);
+	LCD_writeString(10, 10, "Rect./Line.", Font_16x26, ST7789_YELLOW, ST7789_RED);
+	LCD_drawRectangle(30, 30, 100, 100, ST7789_WHITE);
+	HAL_Delay(1000);
+
+	LCD_fillColor(ST7789_RED);
+	LCD_writeString(10, 10, "Filled Rect.", Font_16x26, ST7789_YELLOW, ST7789_RED);
+	LCD_drawFilledRectangle(30, 30, 50, 50, ST7789_WHITE);
+	HAL_Delay(1000);
+
+
+	LCD_fillColor(ST7789_RED);
+	LCD_writeString(10, 10, "Circle.", Font_16x26, ST7789_YELLOW, ST7789_RED);
+	LCD_drawCircle(60, 60, 25, ST7789_WHITE);
+	HAL_Delay(1000);
+
+	LCD_fillColor(ST7789_RED);
+	LCD_writeString(10, 10, "Filled Cir.", Font_16x26, ST7789_YELLOW, ST7789_RED);
+	LCD_drawFilledCircle(60, 60, 25, ST7789_WHITE);
+	HAL_Delay(1000);
+
+	LCD_fillColor(ST7789_RED);
+	LCD_writeString(10, 10, "Triangle", Font_16x26, ST7789_YELLOW, ST7789_RED);
+	LCD_drawTriangle(30, 30, 30, 70, 60, 40, ST7789_WHITE);
+	HAL_Delay(1000);
+
+	LCD_fillColor(ST7789_RED);
+	LCD_writeString(10, 10, "Filled Tri", Font_16x26, ST7789_YELLOW, ST7789_RED);
+	LCD_drawFilledTriangle(30, 30, 30, 70, 60, 40, ST7789_WHITE);
+	HAL_Delay(1000);
+
+	LCD_fillColor(ST7789_WHITE);
+	LCD_drawImage(0, 0, 128, 128, (uint16_t *)saber);
+	HAL_Delay(3000);
